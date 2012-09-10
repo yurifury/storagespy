@@ -11,10 +11,16 @@
 
       <%= content_tag :fieldset do %>
         <legend>Optional Requirements</legend>
-        <%= f.input :climate, label: "Climate Control" %>
-        <%= f.input :drive_access, label: "Drive-up access" %>
-        <%= f.input :all_day, label: "24 hour access" %>
+        <div class="pull-left optional-req">
+          <%= f.input :climate, label: "Climate Control" %>
+          <%= f.input :drive_access, label: "Drive-up access" %>
+          <%= f.input :all_day, label: "24 hour access" %>
+        </div>
+        <div class="pull-right optional-req">
+          <%= f.input :comments, label: "Any comments?", :input_html => { :rows => 6 } %>
+        </div>
       <% end %>
+ 
       <%= f.button :submit, "Submit request", class: "btn-primary btn-large" %><h5>We'll get back to you soon!</h5>
     <% end %>
   </div>

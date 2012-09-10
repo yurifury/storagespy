@@ -1,6 +1,6 @@
 class StorageRequest < ActiveRecord::Base
-  attr_accessible :all_day, :climate, :drive_access, :email, :move_in_date, :phone, :postcode
-  
+  attr_accessible :all_day, :climate, :drive_access, :email, :move_in_date, :phone, :postcode, :comments
+
   validates :email, :phone, :postcode, presence: true
 
   def postcodes
