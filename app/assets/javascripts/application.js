@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(function(){
+  $('.typeahead').typeahead({
+    source: postcodes
+  });
+  $('.datepicker').datepicker({
+    startDate: new Date()
+  });
+})();
