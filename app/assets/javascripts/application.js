@@ -20,6 +20,7 @@ $(function(){
     source: postcodes
   });
   $('.datepicker').datepicker({
-    startDate: new Date()
+    startDate: new Date(),
+    autoclose: true
   });
 })();
